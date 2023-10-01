@@ -12,3 +12,11 @@ The workflow is as follows:
 2. Do your work on the feature branch and commit as often as you like.
 3. When you are done, rebase the main branch onto the feature branch. This will make it look like you did all your work on the main branch.
 4. Push the main branch to the remote repository.
+
+## GitHub CI repo settings
+
+GitHub has various features to help with keeping the main branch in a good state. The following settings are recommended:
+
+- [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
+- [Require branches to be up to date before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-branches-to-be-up-to-date-before-merging)
+- [Include administrators](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#include-administrators)
