@@ -13,5 +13,4 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Build project
-        run: |
-          return 0
+        run: true
