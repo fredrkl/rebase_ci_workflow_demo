@@ -23,4 +23,4 @@ GitHub has various features to help with keeping the main branch in a good state
 
 ## Avoid merge commits
 
-If you want to avoid merge commits, you can use the [_Require linear history_](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-linear-history) setting in GitHub.
+If you want to avoid merge commits, you can use the [_Require linear history_](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-linear-history) setting in GitHub. This setting is a mather of preferences.
