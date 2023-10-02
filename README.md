@@ -8,7 +8,7 @@ However, when working localy on bigger refactoring it is convenient to at least 
 
 The workflow is as follows:
 
-1. Create a feature branch from the main branch but **do not** push it to the remote repository. It is only used locally and should have an extreme short life span, at most a day.
+1. Create a feature branch from the main branch. It is only used locally and should have an extreme short life span, at most a day.
 2. Do your work on the feature branch and commit as often as you like.
 3. When you are done, rebase the main branch onto the feature branch. This will make it look like you did all your work on the main branch.
 4. Push the main branch to the remote repository.
