@@ -28,3 +28,5 @@ If you want to avoid merge commits, you can use the [_Require linear history_](h
 ## Require status checks before merging
 
 The [_Require status checks before merging_](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging) setting in GitHub is a great way to reduce the chance of breaking the main branch. Be sure to include the GitHub CI workflow in the list of required status checks.
+
+This should fail
