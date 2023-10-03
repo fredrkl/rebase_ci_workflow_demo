@@ -17,8 +17,8 @@ The workflow is as follows:
 
 GitHub has various features to help with keeping the main branch in a good state. The following settings are recommended:
 
+- [Avoid merge commits](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-linear-history)
 - [Require status checks before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging)
-- [Require branches to be up to date before merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-branches-to-be-up-to-date-before-merging)
 - [Include administrators](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#include-administrators)
 
 ## Avoid merge commits
@@ -29,6 +29,12 @@ If you want to avoid merge commits, you can use the [_Require linear history_](h
 
 One way to avoid constantly breaking the main branch, without using feature branches and _pull requests_, is the [_Require status checks before merging_](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-before-merging) setting in GitHub. With this setting you will need to verify the git SHA by running the listed GitHub CI workflow checks another branch before pushing to main.
 
-## Require status checks to pass before merging
+## Example
 
-With the [_Require status checks to pass before merging_](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches#require-status-checks-to-pass-before-merging) setting in GitHub you can require that all status checks must pass before a pull request can be merged. This is a great way to reduce the chance of breaking the main branch. The checks are done in a seperate branch.
+Using this repo as an example. We have a main branch and a _build check_ using _GH Actions_ located in the .github/workflows folder. I have enabled the following features on the _main_ branch:
+
+- Require status checks before merging
+- Require linear history
+- Do not allow bypassing the above settings
+
+I create a branch and start working on a feature. I do a couple of commits and push the branch to the remote repo. As soon as the branch builds I do a rebase of the main branch onto my feature branch. This will make it look like I did all my work on the main branch. I then push the main branch to the remote repo. In a sense the branch is used to verify checks and gather feedback before pushing to main. If you do not need the checks, you can skip pushing the branch to the remote repo and just rebase the main branch locally. Or you can simply commit to the main branch directly and push.
