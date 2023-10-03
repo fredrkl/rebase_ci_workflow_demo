@@ -39,6 +39,8 @@ Using this repo as an example. We have a main branch and a _build check_ using _
 
 I create a branch and start working on a feature. I do a couple of commits and push the branch to the remote repo. As soon as the branch builds I do a rebase of the main branch onto my feature branch. This will make it look like I did all my work on the main branch. I then push the main branch to the remote repo. In a sense the branch is used to verify checks and gather feedback before pushing to main. If you do not need the checks, you can skip pushing the branch to the remote repo and just rebase the main branch locally. Or you can simply commit to the main branch directly and push.
 
+## FAQ
+
 ### Why not just create a PR?
 
 A _pull request_ stops the work from being integrated with the main branch and hides the code from everybody else. It is also a lot of overhead to create a PR for every small change. The PR will also be out of sync with the main branch very quickly, and it will be hard to merge it into the main branch.
