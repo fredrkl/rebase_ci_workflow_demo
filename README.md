@@ -53,4 +53,4 @@ In certain cases it can be a good idea to have multiple reviewers and pull reque
 
 ### What about controlling design decisions?
 
-Having a reviewer for all pull requests to control design decisions is a bad idea. That person quickly becomes a bottleneck and the project slows down. Instead, have design sessions before starting on issues and do pair programming.
+Having a reviewer for all pull requests to control design decisions is a bad idea. That person quickly becomes a bottleneck and the project slows down. Instead, you should have design sessions before starting on issues and do pair programming.
