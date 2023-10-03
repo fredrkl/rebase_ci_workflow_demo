@@ -38,3 +38,15 @@ Using this repo as an example. We have a main branch and a _build check_ using _
 - Do not allow bypassing the above settings
 
 I create a branch and start working on a feature. I do a couple of commits and push the branch to the remote repo. As soon as the branch builds I do a rebase of the main branch onto my feature branch. This will make it look like I did all my work on the main branch. I then push the main branch to the remote repo. In a sense the branch is used to verify checks and gather feedback before pushing to main. If you do not need the checks, you can skip pushing the branch to the remote repo and just rebase the main branch locally. Or you can simply commit to the main branch directly and push.
+
+### Why not just create a PR?
+
+A _pull request_ stops the work from being integrated with the main branch and hides the code from everybody else. It is also a lot of overhead to create a PR for every small change. The PR will also be out of sync with the main branch very quickly, and it will be hard to merge it into the main branch.
+
+### What about verifying multiple reviewers?
+
+In certain cases it can be a good idea to have multiple reviewers and pull requests to prove to reviewers that multiple reviewers, e.g, PCI-DSS compliance.
+
+### What about controlling design decisions?
+
+Having a reviewer for all pull requests to control design decisions is a bad idea. That person quickly becomes a bottleneck and the project slows down. Instead, have design sessions before starting on issues and do pair programming.
