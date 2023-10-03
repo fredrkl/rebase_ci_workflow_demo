@@ -41,9 +41,11 @@ I create a branch and start working on a feature. I do a couple of commits and p
 
 ## FAQ
 
-### Why not just create a PR?
+### Why not just create a branch and a PR?
 
-A _pull request_ stops the work from being integrated with the main branch and hides the code from everybody else. It is also a lot of overhead to create a PR for every small change. The PR will also be out of sync with the main branch very quickly, and it will be hard to merge it into the main branch.
+A branch hides and stops the work from being integrated with everybody else's work. It is also overhead to create a PR for every small change, and can potentially stop everybody else's flow when they constantly have to approve PRs. The PR will also be out of sync with the main branch very quickly, and it will be hard to merge it into the main branch.
+
+If everyone is working on their own branch and not continuously integrate into the main branch it does not matter if everyone else is merging main into their branch.
 
 ### What about verifying multiple reviewers?
 
