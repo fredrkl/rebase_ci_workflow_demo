@@ -13,7 +13,7 @@ The workflow is as follows:
 3. When you are done, rebase the main branch onto the branch. This will make it look like you did all your work on the main branch.
 4. Push the main branch to the remote repository.
 
-## GitHub CI repo settings
+## GitHub CI Repo Settings
 
 GitHub has various features to help with keeping the main branch in a good state. The following settings are recommended:
 
